@@ -7,4 +7,4 @@ const UserSchema = new Schema({
     tweets: [{type: mongoose.Schema.Types.ObjectId, ref: 'Tweet' }]
 })
 
-exports.module = mongoose.model('User', UserSchema)
+module.exports = mongoose.model('User', UserSchema)
